@@ -15,6 +15,7 @@ from skimage.morphology import convex_hull_image
 import rectDetector
 import telebot
 import random
+import crnn
 
 temp = r'[a-z][0-9]{3}[a-z]{2}[0-9]{2,3}'
 
@@ -56,9 +57,6 @@ nomer_aug = albu.Compose([
 full_path_image = '/content/drive/My Drive/DataCars'
 #list_cars = os.listdir(full_path_image)
 list_cars = []
-
-import crnn2 as crnn
-
 
 alphabet = '1234567890abekmhopctyx'
 
